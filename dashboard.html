@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Panel del Agente</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="wrap header-inner">
+    <div class="logo">Panel Agente</div>
+    <a href="index.html" class="btn btn-ghost">Salir</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h1>Mis Propiedades</h1>
+<div class="btnrow mt-20">
+  <button id="exportBtn" class="btn btn-ghost">
+    Exportar JSON
+  </button>
+
+  <label class="btn btn-ghost">
+    Importar JSON
+    <input type="file" id="importFile" hidden>
+  </label>
+</div>
+  <!-- LISTADO -->
+  <div id="propList" class="grid-3 mt-20"></div>
+
+  <!-- FORMULARIO -->
+  <div class="card mt-20">
+    <h2>Agregar Propiedad</h2>
+
+    <form id="propForm">
+      <input type="text" id="title" placeholder="Título" required>
+      <select id="type" required>
+       <option value="">Tipo de propiedad</option>
+  <option value="Apartamento">Apartamento</option>
+  <option value="Casa">Casa</option>
+  <option value="Townhouse">Townhouse</option>
+  <option value="Local">Local</option>
+</select>
+ <select id="status" required>
+  <option value="Disponible">Disponible</option>
+  <option value="Reservado">Reservado</option>
+  <option value="Vendido">Vendido</option>
+</select> 
+<label class="checkline">
+  <input type="checkbox" id="featured">
+  Propiedad destacada
+</label>
+      <input type="text" id="price" placeholder="Precio" required>
+      <input type="text" id="location" placeholder="Ubicación" required>
+      <input type="text" id="image" placeholder="URL Imagen" required>
+      <textarea id="description" placeholder="Descripción completa"></textarea>
+      <input type="text" id="size" placeholder="Metros (ej: 120 m²)">
+      <input type="text" id="rooms" placeholder="Habitaciones (ej: 3)">
+      <input type="text" id="baths" placeholder="Baños (ej: 2)">
+      <input type="text" id="gallery" placeholder="Galería (separar por comas)">
+
+      <button type="submit" class="btn btn-submit">Guardar propiedad</button>
+    </form>
+  </div>
+
+</main>
+
+<script src="assets/js/storage.js"></script>
+<script src="assets/js/render.js"></script>
+<script src="assets/js/crud.js"></script>
+<script src="assets/js/dashboard.js"></script>
+
+</body>
+</html>

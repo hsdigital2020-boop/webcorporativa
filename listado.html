@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Listado de Propiedades — Tu Marca</title>
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/componentes.css">
+<link rel="stylesheet" href="assets/css/listing.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+  
+</head>
+<body>
+<header class="header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png">
+      <span>Tu Inmobiliaria</span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="listado.html">Propiedades</a>
+      <a href="nosotros.html">Acerca de mí</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+<!-- CTA + ACCESO -->
+    <div class="actions">
+<a href="login.html" class="btn btn-ghost">Acceso</a>
+<a href="https://wa.me/584126563284" class="btn btn-wa">WhatsApp</a>        
+      </div>
+  </div>
+</header>
+
+  <main class="wrap">
+    <h1>Listado de Propiedades Disponibles</h1>
+    <p class="sub">Propiedades verificadas y listas para negociar. Agenda una visita por WhatsApp o entra a ver los detalles.</p>
+    <div class="listing-toolbar">
+
+  <select id="sortProps">
+
+    <option value="recent">
+      Más recientes
+    </option>
+
+    <option value="low">
+      Menor precio
+    </option>
+
+    <option value="high">
+      Mayor precio
+    </option>
+
+  </select>
+
+</div>
+<div class="filters">
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Buscar propiedad..."
+  >
+
+  <select id="typeFilter">
+    <option value="">Todos los tipos</option>
+    <option value="Apartamento">Apartamento</option>
+    <option value="Casa">Casa</option>
+    <option value="Townhouse">Townhouse</option>
+    <option value="Local">Local</option>
+  </select>
+
+  <input
+    type="number"
+    id="priceFilter"
+    placeholder="Precio máximo"
+  >
+
+</div>
+    <section id="dynamicProps" class="grid-3">
+      
+    </section>
+<div id="pagination" class="pagination"></div>
+    
+  </main>
+
+  <script src="assets/js/listado.js"></script>
+</body>
+</html>

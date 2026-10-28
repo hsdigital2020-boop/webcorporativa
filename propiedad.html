@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Propiedad — Apartamento en el Este</title>
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/componentes.css">
+<link rel="stylesheet" href="assets/css/property.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+ 
+</head>
+
+<body>
+ <!-- HEADER -->
+<header class="header">
+   <div class="wrap header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png">
+      <span>Tu Inmobiliaria</span>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="listado.html">Propiedades</a>
+      <a href="nosotros.html">Acerca de mí</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+<!-- CTA + ACCESO -->
+    <div class="actions">
+<a href="login.html" class="btn btn-ghost">Acceso</a>
+<a href="https://wa.me/584126563284" class="btn btn-wa">WhatsApp</a>        
+      </div>
+  </div>
+</header>
+
+  <main class="wrap">
+    <div class="property-header">
+      <div>
+        <h1 id="propTitle"></h1>
+        <p id="propLocation" class="property-loc"></p>
+      </div>
+    <div class="property-card">
+        <div id="propPrice" class="price-badge"></div>
+        <div id="propStatus"></div>
+    </div>
+    </div>
+
+    <section class="property-grid">
+      <!-- Izquierda: imagen + thumbs + descripción + amenidades -->
+      <div>
+        <div class="card property-card">
+          <div class="property-media">
+            <img id="mainPhoto" src="" alt="Imagen principal">
+          </div>
+
+          <!-- Thumbs (puedes reemplazar por fotos reales interiores cuando las tengas) -->
+          <div id="propGallery" class="property-thumbs" aria-label="Galería de imágenes"></div>
+        </div>
+
+        <div class="card property-desc">
+          <div class="text-content">
+          <h3>Descripción</h3>
+          <p id="propDescription" class="property-desc"></p>
+        </div>
+        </div>
+
+
+        <div class="card property-amen">
+          <div class="text-content">
+          <h3>Amenidades</h3>
+          <div class="chips">
+            <span class="chip">🚗 Estacionamiento</span>
+            <span class="chip">🛡️ Vigilancia</span>
+            <span class="chip">🏋️ Gimnasio</span>
+            <span class="chip">🏊 Piscina</span>
+            <span class="chip">🎉 Salón de fiestas</span>
+            <span class="chip">🌿 Áreas verdes</span>
+          </div>
+          </div>
+        </div>
+      
+      </div>
+      <!-- Derecha: datos básicos + CTA -->
+      <aside class="card property-side">
+        <h3>Datos básicos</h3>
+        <div class="property-basic">
+          <div id="propSize"></div>
+          <div id="propRooms"></div>
+          <div id="propBaths"></div>
+        </div>
+
+                <div>
+          <a class="btn" href="listado.html">← Volver al listado</a>
+        </div>
+      </aside>      
+    </section>
+  </main>
+<div class="card cta-card">
+  <a id="propWhatsapp" class="btn btn-wa btn-center" target="_blank">
+  💬 Agendar visita por WhatsApp
+</a>
+</div>
+  <!-- CTA fijo en móvil -->
+  <div class="sticky-cta">
+    <div class="wrap">
+      <a id="propWhatsappSticky" class="btn btn-wa" target="_blank">
+  💬 Agendar visita
+</a>
+    </div>
+  </div>
+
+  <script src="assets/js/propiedad.js"></script>
+</body>
+
+</html>
