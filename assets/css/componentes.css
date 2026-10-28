@@ -1,0 +1,317 @@
+/* GRID - utilidades reutilizables*/
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+/* CARD - Componente reusable.*/
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow-sm);
+  transition:.25s ease;
+}
+.card:hover{
+  transform:translateY(-4px);
+}
+
+/* BOTONES - Sistema de botones reusable*/
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 18px;
+  border-radius:14px;
+  font-weight:800;
+  border:1px solid var(--line);
+  background:#fff;
+  transition:.2s ease;
+}
+
+.btn-wa{
+  background:var(--wa);
+  color:#fff;
+  border:none;
+}
+
+.btn-wa:hover{
+  background:var(--wa-dark);
+}
+
+.btn-ghost{
+  background:transparent;
+  border:1px solid rgba(71,85,105,.2);
+}
+
+.wa-big{
+  display:inline-block;
+  margin-top:10px;
+  padding:16px 20px;
+  font-size:18px;
+  background:var(--wa);
+  color:#fff;
+  border-radius:14px;
+  font-weight:900;
+}
+
+/* Header global compartido */
+.header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,247,237,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:12px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+}
+
+.logo img{
+  width:90px;
+}
+
+.nav{
+  display:flex;
+  gap:20px;
+}
+
+.nav a{
+  font-weight:600;
+  color:#334155;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+/* Hero reusable entre páginas */
+.hero{
+  padding:60px 0;
+}
+
+.hero h1{
+  font-size:54px;
+  line-height:1.05;
+  margin:14px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  border-radius:20px;
+  display:block;
+}
+/* HOME - Bloques reutilizables del home */
+
+.about{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:18px;
+  align-items:center;
+}
+
+.agent-photo{
+  width:170px;
+  aspect-ratio:1/1;
+  border-radius:50%;
+  object-fit:cover;
+  margin:auto;
+}
+
+/* LISTAS */
+.bullets{
+  margin:14px 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+
+.bullets li{
+  display:flex;
+  gap:10px;
+  color:var(--muted);
+}
+
+.check{
+  width:22px;
+  height:22px;
+  border-radius:8px;
+  background:rgba(34,197,94,.14);
+  display:grid;
+  place-items:center;
+  font-weight:900;
+}
+
+/* Componentes de blog/article. */
+
+.blog-wrap{
+  max-width:900px;
+}
+
+.blog-hero-img img{
+  width:100%;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+.text-content h1{
+  font-size:34px;
+  margin:20px 0 10px;
+}
+
+.text-content h2{
+  margin-top:30px;
+}
+
+.text-content p{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* Sistema de formularios reusable */
+form{
+  display:grid;
+  gap:12px;
+}
+
+input, textarea{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-family:inherit;
+  font-size:14px;
+}
+
+textarea{
+  min-height:100px;
+}
+
+/* CTA reusable */
+
+.cta{
+  margin:30px 0;
+  padding:20px;
+  border-radius:16px;
+  background:#fff;
+  border:1px solid var(--line);
+  text-align:center;
+}
+
+/* Testimonios reutilizables */
+
+.test-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.tcard{padding:16px}
+
+.t-top{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.t-avatar-img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.t-name{font-weight:900}
+
+.stars{
+  color:#16A34A;
+  font-size:14px;
+}
+
+.tag{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(15,23,42,.04);
+  font-size:12px;
+  font-weight:800;
+  margin-top:10px;
+}
+
+.quote{
+  color:var(--muted);
+}
+
+/* Secciones reutilizables */
+.value{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:18px;
+  align-items:center;
+}
+
+.cred{padding:18px}
+
+.logos{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.cred-logo{
+  width:140px;
+  height:80px;
+  object-fit:contain;
+}
+
+.cta-box{
+  padding:18px;
+}
+
+.cta-final{
+  text-align:center;
+  padding:60px 0;
+}
+
+/* WHATSAPP BOX */
+.wa-box{
+  text-align:center;
+}

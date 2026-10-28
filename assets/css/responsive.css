@@ -1,0 +1,41 @@
+/* =========================
+   12. RESPONSIVE
+========================= */
+@media(max-width:980px){
+  .grid,
+  .grid-3,
+  .two-col,
+  .hero-grid,
+  .test-grid,
+  .property-grid,
+  .value{
+    grid-template-columns:1fr;
+  }
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .nav{
+    display:none;
+  }
+
+  section{
+    padding:56px 0;
+  } 
+  
+   .sticky-cta{
+    display:block;
+  }
+}
+
+@media(max-width:768px){
+
+  .wrap{
+    padding:0 16px;
+  }
+
+}

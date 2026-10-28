@@ -1,0 +1,638 @@
+/* =========================
+   1. VARIABLES
+========================= */
+:root{
+  --bg:#FFF7ED;
+  --card:#FFFFFF;
+  --text:#0F172A;
+  --muted:#475569;
+  --line:#E7E1D8;
+
+  --wa:#22C55E;
+  --wa-dark:#16A34A;
+
+  --radius:18px;
+  --container:1200px;
+
+  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --shadow-sm:0 6px 18px rgba(15,23,42,.08);
+}
+
+/* =========================
+   2. BASE
+========================= */
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:Inter, system-ui;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* 🔥 FIX GLOBAL IMÁGENES */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+  image-rendering:auto;
+}
+/* 🔥 FIX CARDS INMOBILIARIAS */
+.img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  display:block;
+}
+
+/* =========================
+   3. LAYOUT
+========================= */
+.wrap{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 24px;
+}
+
+main{
+  padding:28px 0 96px;
+}
+
+section{
+  padding:64px 0;
+}
+
+/* =========================
+   4. GRID
+========================= */
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+/* =========================
+   5. COMPONENTES
+========================= */
+
+/* CARD */
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:20px;
+  box-shadow:var(--shadow-sm);
+  transition:.25s ease;
+}
+.card:hover{
+  transform:translateY(-4px);
+}
+
+/* BOTONES */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 18px;
+  border-radius:14px;
+  font-weight:800;
+  border:1px solid var(--line);
+  background:#fff;
+  transition:.2s ease;
+}
+
+.btn-wa{
+  background:var(--wa);
+  color:#fff;
+  border:none;
+}
+
+.btn-wa:hover{
+  background:var(--wa-dark);
+}
+
+.btn-ghost{
+  background:transparent;
+  border:1px solid rgba(71,85,105,.2);
+}
+
+/* BOTÓN GRANDE */
+.wa-big{
+  display:inline-block;
+  margin-top:10px;
+  padding:16px 20px;
+  font-size:18px;
+  background:var(--wa);
+  color:#fff;
+  border-radius:14px;
+  font-weight:900;
+}
+
+/* =========================
+   6. HEADER
+========================= */
+.header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(255,247,237,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:12px 0;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:900;
+}
+
+.logo img{
+  width:90px;
+}
+
+.nav{
+  display:flex;
+  gap:20px;
+}
+
+.nav a{
+  font-weight:600;
+  color:#334155;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+}
+
+/* =========================
+   7. HERO
+========================= */
+.hero{
+  padding:60px 0;
+}
+
+.hero h1{
+  font-size:54px;
+  line-height:1.05;
+  margin:14px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  border-radius:20px;
+  display:block;
+}
+/* =========================
+   8. HOME
+========================= */
+
+/* ABOUT */
+.about{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:18px;
+  align-items:center;
+}
+
+.agent-photo{
+  width:170px;
+  aspect-ratio:1/1;
+  border-radius:50%;
+  object-fit:cover;
+  margin:auto;
+}
+
+/* LISTAS */
+.bullets{
+  margin:14px 0 0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:10px;
+}
+
+.bullets li{
+  display:flex;
+  gap:10px;
+  color:var(--muted);
+}
+
+.check{
+  width:22px;
+  height:22px;
+  border-radius:8px;
+  background:rgba(34,197,94,.14);
+  display:grid;
+  place-items:center;
+  font-weight:900;
+}
+
+/* =========================
+   9. BLOG
+========================= */
+
+.blog-wrap{
+  max-width:900px;
+}
+
+.blog-hero-img img{
+  width:100%;
+  border-radius:20px;
+  margin-top:20px;
+}
+
+/* TEXTO CONTROLADO */
+.text-content h1{
+  font-size:34px;
+  margin:20px 0 10px;
+}
+
+.text-content h2{
+  margin-top:30px;
+}
+
+.text-content p{
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* =========================
+   10. FORMULARIO (CONTACTO)
+========================= */
+form{
+  display:grid;
+  gap:12px;
+}
+
+input, textarea{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-family:inherit;
+  font-size:14px;
+}
+
+textarea{
+  min-height:100px;
+}
+
+/* =========================
+   11. CTA
+========================= */
+.cta{
+  margin:30px 0;
+  padding:20px;
+  border-radius:16px;
+  background:#fff;
+  border:1px solid var(--line);
+  text-align:center;
+}
+
+/* =========================
+   12. RESPONSIVE
+========================= */
+@media(max-width:980px){
+  .grid,
+  .grid-3,
+  .two-col,
+  .hero-grid,
+  .about{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .nav{
+    display:none;
+  }
+
+  section{
+    padding:56px 0;
+  }  
+}
+
+/* =========================
+   EXTRA MIGRACIÓN FALTANTE
+========================= */
+
+/* TESTIMONIOS */
+.test-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.tcard{padding:16px}
+
+.t-top{
+  display:flex;
+  gap:10px;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.t-avatar-img{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.t-name{font-weight:900}
+
+.stars{
+  color:#16A34A;
+  font-size:14px;
+}
+
+.tag{
+  display:inline-flex;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(15,23,42,.04);
+  font-size:12px;
+  font-weight:800;
+  margin-top:10px;
+}
+
+.quote{
+  color:var(--muted);
+}
+
+/* PROPUESTA DE VALOR */
+.value{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:18px;
+  align-items:center;
+}
+
+.cred{padding:18px}
+
+.logos{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.cred-logo{
+  width:140px;
+  height:80px;
+  object-fit:contain;
+}
+
+.cta-box{
+  padding:18px;
+}
+
+.cta-final{
+  text-align:center;
+  padding:60px 0;
+}
+
+/* WHATSAPP BOX */
+.wa-box{
+  text-align:center;
+}
+
+/* =========================
+   SINGLE PROPIEDAD
+========================= */
+
+.property-header{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.property-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:16px;
+}
+
+.property-media{
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.property-media img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  display:block;
+}
+
+.property-thumbs{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:12px;
+}
+
+.property-thumbs img{
+  width: 100%;
+  aspect-ratio:1/1;
+  border-radius:12px;
+  object-fit:cover;
+  cursor:pointer;
+  }
+
+.property-side{
+  padding:16px;
+}
+
+.property-basic{
+  display:grid;
+  gap:10px;
+  color:var(--muted);
+}
+
+.property-desc,
+.property-amen{
+  padding:18px;
+}
+.price-badge{background:rgba(22,163,74,.15);
+border:1px solid rgba(22,163,74,.25);color:#166534;
+padding:10px 14px;
+border-radius:14px;font-weight:900;font-size:18px}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.chip{
+  padding:10px 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:13px;
+  font-weight:500;   
+}
+
+.cta-card{
+  padding:18px;
+  text-align:center;
+}
+
+/* CTA fijo */
+.sticky-cta{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  display:none;
+}
+
+/*==== FILTROS DE PROPIEDADES====*/
+.filters{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:24px 0;
+}
+
+.filters input,
+.filters select{
+  width:100%;
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+}
+
+/*==== BADGE PROPIEDADES====*/
+.status-badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+/* disponible */
+.status-Disponible{
+  background:#DCFCE7;
+  color:#166534;
+}
+
+/* reservado */
+.status-Reservado{
+  background:#FEF3C7;
+  color:#92400E;
+}
+
+/* vendido */
+.status-Vendido{
+  background:#FEE2E2;
+  color:#991B1B;
+}
+
+/*=== LISTING TOOLBAR DE PROPIEDADES===*/
+.listing-toolbar{
+  display:flex;
+  justify-content:flex-end;
+  margin:20px 0;
+}
+
+.listing-toolbar select{
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:14px;
+  font-weight:600;
+}
+
+/*=== Paginacion de listado ===*/
+.pagination{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:40px;
+  flex-wrap:wrap;
+}
+
+.pagination button{
+  padding:10px 14px;
+  border:none;
+  border-radius:10px;
+  background:#fff;
+  border:1px solid var(--line);
+  cursor:pointer;
+  font-weight:700;
+}
+
+.pagination button.active{
+  background:var(--wa);
+  color:#fff;
+  border-color:var(--wa);
+}
+/* =========================
+   RESPONSIVE EXTRA
+========================= */
+
+@media(max-width:980px){
+
+  .test-grid,
+  .property-grid,
+  .value{
+    grid-template-columns:1fr;
+  }
+
+  .sticky-cta{
+    display:block;
+  }
+}
+
+@media(max-width:768px){
+
+  .wrap{
+    padding:0 16px;
+  }
+
+}
+
+ 

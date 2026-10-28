@@ -1,0 +1,61 @@
+/* =========================
+   1. VARIABLES
+========================= */
+:root{
+  --bg:#FFF7ED;
+  --card:#FFFFFF;
+  --text:#0F172A;
+  --muted:#475569;
+  --line:#E7E1D8;
+
+  --wa:#22C55E;
+  --wa-dark:#16A34A;
+
+  --radius:18px;
+  --container:1200px;
+
+  --shadow:0 10px 30px rgba(15,23,42,.08);
+  --shadow-sm:0 6px 18px rgba(15,23,42,.08);
+}
+
+/* =========================
+   2. BASE
+========================= */
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  font-family:Inter, system-ui, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* 🔥 FIX GLOBAL IMÁGENES */
+img{
+  max-width:100%;
+  height:auto;
+  display:block;
+}
+
+/* =========================
+   3. LAYOUT
+========================= */
+.wrap{
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 24px;
+}
+
+main{
+  padding:28px 0 96px;
+}
+
+section{
+  padding:64px 0;
+}

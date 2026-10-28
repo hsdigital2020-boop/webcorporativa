@@ -1,0 +1,90 @@
+/* =========================
+   SINGLE PROPIEDAD
+========================= */
+
+.property-header{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.property-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:16px;
+}
+
+.property-media{
+  border-radius:16px;
+  overflow:hidden;
+}
+
+.property-media img{
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  display:block;
+}
+
+.property-thumbs{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-top:12px;
+}
+
+.property-thumbs img{
+  width:100%;
+  aspect-ratio:1/1;
+  border-radius:12px;
+  object-fit:cover;
+  cursor:pointer;
+  }
+
+.property-side{
+  padding:16px;
+}
+
+.property-basic{
+  display:grid;
+  gap:10px;
+  color:var(--muted);
+}
+
+.property-desc,
+.property-amen{
+  padding:18px;
+}
+.price-badge{background:rgba(22,163,74,.15);
+border:1px solid rgba(22,163,74,.25);color:#166534;
+padding:10px 14px;
+border-radius:14px;font-weight:900;font-size:18px}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.chip{
+  padding:10px 12px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  font-size:13px;
+  font-weight:500;   
+}
+
+.cta-card{
+  padding:18px;
+  text-align:center;
+}
+
+/* CTA fijo */
+.sticky-cta{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  display:none;
+}
