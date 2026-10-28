@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Modelo 3 — web Inmobiliaria</title>
+  <meta name="description" content="Landing inmobiliaria de alta captación con CTA a WhatsApp." />
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/componentes.css">
+<link rel="stylesheet" href="assets/css/listing.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+ 
+</head>
+
+<body>
+  <!-- HEADER GLOBAL -->
+<header class="header">
+  <div class="wrap header-inner">
+
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      <span>Tu Inmobiliaria</span>
+    </a>
+    <!-- MENU -->
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="listado.html">Propiedades</a>
+      <a href="nosotros.html">Acerca de mí</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- CTA + ACCESO -->
+    <div class="actions">
+<a href="login.html" class="btn btn-ghost">Acceso</a>
+<a href="..." class="btn btn-wa">WhatsApp</a>        
+      </div>
+
+  </div>
+
+  <!-- 1) HERO -->
+  <section class="hero hero-home" id="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="pill">Asesor inmobiliario en Barquisimeto</span>
+          <h1>Compra o vende con asesoría real (sin perder tiempo).</h1>
+          <p>Propiedades verificadas, negociación y acompañamiento hasta la firma. Te respondo rápido por WhatsApp y te indico el plan más directo según tu caso.</p>
+
+          <div class="btn-row">
+            <a class="btn btn-wa"
+               href="https://wa.me/584126563284?text=Hola%2C%20quiero%20una%20asesor%C3%ADa%20inmobiliaria."
+               target="_blank" rel="noopener">
+              💬 Escribir por WhatsApp
+            </a>
+            <a class="btn btn-ghost" href="#captaciones">Ver propiedades</a>
+          </div>
+
+          <div class="micro">
+            <span><i class="dot"></i> Respuesta en minutos</span>
+            <span><i class="dot"></i> Asesoría inicial gratuita</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="Agente inmobiliario atendiendo por WhatsApp">
+          <img
+  class="hero-img" 
+  src="assets/agent-hero.png" 
+  alt="Agente inmobiliario en un entorno residencial, usando su teléfono"
+  decoding="async"
+  >
+
+          <div class="label">
+            <div class="wa-bubble">WA</div>
+            <div>
+              <b>¿Listo para avanzar?</b>
+              <small>“Hola, quiero vender/comprar y necesito asesoría.”</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <!-- 2) ÚLTIMAS CAPTACIONES -->
+  <section id="captaciones">
+    <div class="wrap">
+      <h2 class="section-title">Últimas captaciones</h2>
+      <p class="section-sub">Propiedades verificadas y listas para negociar.</p>
+
+<section id="featuredProps" class="grid-3"></section>
+
+      <div class="center">
+        <!-- ✅ Conecta a listing -->
+        <a class="btn btn-ghost" href="listado.html" aria-label="Ver todas las propiedades">Ver todos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) ACERCA DE -->
+  <section id="acerca">
+    <div class="wrap">
+      <div class="card about">
+        <div class="center">
+          <img class="agent-photo" src="assets/agent-about.png" alt="Foto del agente inmobiliario" loading="lazy" decoding="async">
+        </div>
+
+        <div>
+          <h2 class="section-title">Acerca de mí</h2>
+          <p class="section-sub">
+            Soy <b>[Nombre]</b>, asesor inmobiliario especializado en Barquisimeto. Te ayudo a comprar o vender con seguridad: filtro opciones reales, valido documentos y negocio para que cierres bien.
+          </p>
+
+          <ul class="bullets">
+            <li><span class="check">✓</span> <span><b>Acompañamiento 1:1</b><br><span class="text-sm">Atención personalizada en cada paso del proceso.</span></span></li>
+            <li><span class="check">✓</span> <span><b>Validación documental</b><br><span class="text-sm">Revisión de documentos y legalidad antes de avanzar.</span></span></li>
+            <li><span class="check">✓</span> <span><b>Negociación y cierre</b><br><span class="text-sm">Busco las mejores condiciones para ti.</span></span></li>
+          </ul>
+
+          <div class="btn-row">
+            <a class="btn btn-wa"
+               href="https://wa.me/584126563284?text=Hola%2C%20quiero%20una%20asesor%C3%ADa%20inmobiliaria."
+               target="_blank" rel="noopener">
+              💬 Hablar por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) PRUEBA SOCIAL -->
+  <section id="testimonios">
+    <div class="wrap">
+      <h2 class="section-title">Lo que dicen mis clientes</h2>
+      <p class="section-sub">Testimonios reales de personas que confiaron en mi asesoría.</p>
+
+      <div class="test-grid">
+        <div class="card tcard">
+          <div class="t-top">
+            <img class="t-avatar-img" src="assets/avatar-maria.png" alt="Foto de perfil de María P." loading="lazy"
+decoding="async">
+            <div>
+              <div class="t-name">Maria P.</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="quote">“Vendimos en 21 días. Filtró visitas, llevó el seguimiento y negoció excelente. Todo claro por WhatsApp.”</p>
+          <span class="tag">Venta</span>
+        </div>
+
+        <div class="card tcard">
+          <div class="t-top">
+            <img class="t-avatar-img" src="assets/avatar-carlos.png" alt="Foto de perfil de Carlos R." loading="lazy"
+decoding="async">
+            <div>
+              <div class="t-name">Carlos R.</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="quote">“Proceso ordenado y sin sorpresas. Me ayudó con documentos y cierre. Recomendado 100%.”</p>
+          <span class="tag">Compra</span>
+        </div>
+
+        <div class="card tcard">
+          <div class="t-top">
+            <img class="t-avatar-img" src="assets/avatar-andrea.png" alt="Foto de perfil de Andrea G." loading="lazy"
+decoding="async">
+            <div>
+             <div class="t-name">Andrea G.</div>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="quote">“Encontré justo lo que buscaba. Respuesta rápida y acompañamiento real en todo momento.”</p>
+          <span class="tag">Compra</span>
+        </div>
+      </div>
+
+      <div class="center">
+        <a class="btn btn-wa"
+           href="https://wa.me/584126563284?text=Hola%2C%20quiero%20una%20asesor%C3%ADa%20inmobiliaria."
+           target="_blank" rel="noopener">
+          💬 Quiero una asesoría por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) SERVICIOS -->
+  <section id="servicios">
+    <div class="wrap">
+      <h2 class="section-title">Servicios</h2>
+      <p class="section-sub">Dos caminos, un mismo objetivo: que cierres bien (con seguridad y estrategia).</p>
+
+      <div class="two-col">
+        <div class="card svc">
+          <h3>Intermediación y comercialización de inmuebles</h3>
+          <p>Si vas a vender o alquilar, te ayudo a atraer clientes reales y cerrar con respaldo.</p>
+          <ul>
+            <li>Fotos y descripción que posicionan tu propiedad</li>
+            <li>Difusión en canales correctos (premium si aplica)</li>
+            <li>Precalificación de interesados y gestión de visitas</li>
+            <li>Negociación y acompañamiento hasta el cierre</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-wa"
+               href="https://wa.me/584126563284?text=Hola%2C%20quiero%20vender%20o%20alquilar%20una%20propiedad."
+               target="_blank" rel="noopener">
+              💬 Quiero vender por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="card svc">
+          <h3>Asesoría inmobiliaria para comprar con seguridad</h3>
+          <p>Te acompaño a elegir bien, evitar riesgos y negociar el mejor acuerdo posible.</p>
+          <ul>
+            <li>Búsqueda guiada según presupuesto y zona</li>
+            <li>Comparación de opciones (precio, estado, papeles)</li>
+            <li>Verificación documental y validación de datos clave</li>
+            <li>Acompañamiento en negociación y firma</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-wa"
+               href="https://wa.me/584126563284?text=Hola%2C%20quiero%20asesor%C3%ADa%20para%20comprar%20una%20propiedad."
+               target="_blank" rel="noopener">
+              💬 Quiero asesoría por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6) PROPUESTA DE VALOR -->
+  <section id="valor">
+    <div class="wrap">
+      <div class="card value">
+        <div>
+          <h2>¿Por qué trabajar conmigo?</h2>
+          <p>Porque tu operación debe ser simple: claridad, respuesta rápida y un proceso que cierre bien.</p>
+          <ul class="bullets">
+            <li><span class="check">✓</span> <span><b>Propiedades verificadas</b><br><span class="text-sm">Menos pérdida de tiempo y más decisiones seguras.</span></span></li>
+            <li><span class="check">✓</span> <span><b>Comunicación directa por WhatsApp</b><br><span class="text-sm">Seguimiento claro y respuestas rápidas.</span></span></li>
+            <li><span class="check">✓</span> <span><b>Negociación enfocada en tu beneficio</b><br><span class="text-sm">Busco condiciones favorables y cierre ordenado.</span></span></li>
+            <li><span class="check">✓</span> <span><b>Acompañamiento hasta la firma</b><br><span class="text-sm">Te llevo paso a paso, sin sorpresas.</span></span></li>
+          </ul>
+
+          <div class="btn-row">
+            <a class="btn btn-wa"
+               href="https://wa.me/584126563284?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita."
+               target="_blank" rel="noopener">
+              💬 Agenda tu asesoría por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="Imagen del agente">
+          <img class="hero-img" src="assets/agent-hero2.png" alt="Agente inmobiliario en un entorno residencial" loading="lazy" decoding="async">
+          <div class="label">
+            <div class="wa-bubble">✓</div>
+            <div>
+              <b>Proceso claro</b>
+              <small>De la búsqueda a la firma, contigo.</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) CONSEJOS INMOBILIARIOS -->
+<section class="blog">
+  <div class="wrap">
+
+    <h2 class="section-title center">Consejos inmobiliarios</h2>
+    <p class="section-sub center">Información clave para tomar mejores decisiones</p>
+
+    <div class="grid-3">
+
+      <article class="card">
+        <img src="assets/blog/blog2.jpg" class="blog-img" loading="lazy" decoding="async" alt="Artículo inmobiliario">
+
+        <div class="card-body">
+          <h3>¿Por qué no se vende tu propiedad?</h3>
+          <a href="por-que-no-se-vende-propiedad-barquisimeto.html" class="link">
+            Leer más →
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/blog/blog1.jpg" class="blog-img" loading="lazy" decoding="async" alt="Artículo inmobiliario">
+        <div class="card-body">
+          <h3>¿Cuánto cuesta comprar casa?</h3>
+          <a href="cuanto-cuesta-casa-barquisimeto.html" class="link">
+            Leer más →
+          </a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/blog/blog3.jpg" class="blog-img" loading="lazy" decoding="async" alt="Artículo inmobiliario">
+        <div class="card-body">
+          <h3>Qué revisar antes de comprar</h3>
+          <a href="que-revisar-antes-de-comprar-casa-venezuela.html" class="link">
+            Leer más →
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="center">
+      <a href="blog.html" class="btn btn-ghost">
+        Ver todos los artículos
+      </a>
+    </div>
+
+  </div>
+
+  <!-- 7) CREDENCIALES -->
+  <section id="cta-final">
+    <div class="wrap">
+      <div class="two-col">
+        <div class="card cred">
+          <h2>Credenciales y respaldo</h2>
+          <p class="section-sub">Afiliaciones y formación continua para operar con estándares y buenas prácticas.</p>
+
+          <div class="logos" aria-label="Logos de organizaciones">
+            <img class="cred-logo" src="assets/cred-camara-inmobiliaria.png" alt="Cámara Inmobiliaria" loading="lazy"
+decoding="async">
+            <img class="cred-logo" src="assets/cred-asociuven.png" alt="ASOCIUVEN" loading="lazy"
+decoding="async">
+            <img class="cred-logo" src="assets/cred-ucla.png" alt="Certificación UCLA" loading="lazy"
+decoding="async">
+          </div>
+        </div>
+
+        <div class="card cta-box">
+          <h2>Agenda tu asesoría gratuita</h2>
+          <p>Cuéntame qué buscas o qué necesitas vender. Te respondo por WhatsApp y te digo el plan más directo para tu caso.</p>
+          <div class="btn-row">
+            <a class="btn btn-wa"
+               href="https://wa.me/584126563284?text=Hola%2C%20quiero%20agendar%20una%20asesor%C3%ADa%20gratuita."
+               target="_blank" rel="noopener">
+              💬 Agenda tu asesoría por WhatsApp
+            </a>
+          </div>
+          <div class="micro">
+            <span><i class="dot"></i> Sin compromiso</span>
+            <span><i class="dot"></i> Cupos semanales limitados</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- 8) CTA FINAL -->
+  <section class="cta-final">
+  <h2>¿Listo para dar el siguiente paso?</h2>
+  <p>Ya viste propiedades y entendiste el proceso. Ahora toca avanzar.</p>
+
+  <a href="https://wa.me/584126563284?text=Hola%2C%20quiero%20avanzar"
+   class="btn btn-wa">
+   💬 Hablar por WhatsApp
+</a>
+</section>
+  <footer>
+    <div class="wrap">
+      Modelo 2 — Wireframe presentable (HTML/CSS). Reemplaza: [Nombre], enlaces, precios y logos.
+    </div>
+  </footer>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
